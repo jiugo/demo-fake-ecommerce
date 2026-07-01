@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout | Bike & Fit Store</title>
+  <meta name="description" content="Ecommerce ficticio para demostraciones.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <a class="logo" href="index.html" aria-label="BrainEcommerce inicio">
+      <span class="brand-logo" aria-hidden="true">
+        <span class="brand-main">br<span class="brand-ai">AI</span><span class="brand-n">n</span></span>
+        <span class="brand-sub">ecommerce</span>
+        <img class="brand-icon" src="images/brain-icon.png" alt="">
+      </span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="faq.html">Ayuda</a>
+      <a class="cart-pill" href="carrito.html">🛒 Carrito <strong data-cart-count>0</strong></a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <div>
+        <h2>Checkout demo</h2>
+        <p>Formulario ficticio. No procesa pagos ni envía datos reales.</p>
+      </div>
+    </div>
+    <div class="cart-layout">
+      <form id="checkout-form" class="form-card">
+        <div class="form-grid">
+          <div class="field">
+            <label>Nombre</label>
+            <input required placeholder="Nombre y apellido">
+          </div>
+          <div class="field">
+            <label>Teléfono</label>
+            <input required placeholder="+598 ...">
+          </div>
+          <div class="field full">
+            <label>Email</label>
+            <input type="email" required placeholder="cliente@email.com">
+          </div>
+          <div class="field full">
+            <label>Dirección de entrega</label>
+            <input required placeholder="Calle, número, ciudad">
+          </div>
+          <div class="field">
+            <label>Entrega</label>
+            <select>
+              <option>Envío a domicilio</option>
+              <option>Retiro en local</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Pago</label>
+            <select>
+              <option>Link de pago</option>
+              <option>Transferencia bancaria</option>
+              <option>Efectivo al retirar</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label>Comentarios</label>
+            <textarea placeholder="Ej: entregar después de las 18 hs."></textarea>
+          </div>
+        </div>
+        <button class="btn btn-primary" style="margin-top:18px" type="submit">Generar pedido demo</button>
+      </form>
+      <aside class="summary-card">
+        <h3 style="margin-top:0">Total estimado</h3>
+        <div class="summary-row total"><span>Total</span><strong id="checkout-total">USD 0</strong></div>
+        <p style="color:var(--muted);line-height:1.5">Este checkout es solo para demo. Al confirmar se genera un número de pedido ficticio.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>BrainEcommerce Demo Store</h3>
+      <p>Tienda ficticia creada para demostraciones comerciales. Los productos, precios, pedidos y direcciones son de ejemplo.</p>
+    </div>
+    <div>
+      <h3>Atención</h3>
+      <p>Lunes a viernes de 9 a 18 hs.<br>Sábados de 9 a 13 hs.</p>
+    </div>
+    <div>
+      <h3>Demo</h3>
+      <p>Probá pedidos: ORD-1027, ORD-1041 y ORD-1088.</p>
+    </div>
+  </div>
+</footer>
+<div class="toast"></div>
+
+<script src="data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

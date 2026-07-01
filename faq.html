@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ayuda | Bike & Fit Store</title>
+  <meta name="description" content="Ecommerce para demostraciones.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <a class="logo" href="index.html" aria-label="BrainEcommerce inicio">
+      <span class="brand-logo" aria-hidden="true">
+        <span class="brand-main">br<span class="brand-ai">AI</span><span class="brand-n">n</span></span>
+        <span class="brand-sub">ecommerce</span>
+        <img class="brand-icon" src="images/brain-icon.png" alt="">
+      </span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="faq.html">Ayuda</a>
+      <a class="cart-pill" href="carrito.html">🛒 Carrito <strong data-cart-count>0</strong></a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <div>
+        <h2>Ayuda y preguntas frecuentes</h2>
+        <p>Atención online.</p>
+      </div>
+    </div>
+    <div class="faq">
+      <div class="faq-item">
+        <h3>¿Cuánto demora el envío?</h3>
+        <p>Montevideo y Canelones: 24 a 48 horas hábiles. Interior: 3 a 5 días hábiles.</p>
+      </div>
+      <div class="faq-item">
+        <h3>¿Puedo cambiar un producto?</h3>
+        <p>Sí. Los cambios pueden solicitarse dentro de los 10 días corridos con el producto sin uso y en su empaque original.</p>
+      </div>
+      <div class="faq-item">
+        <h3>¿Qué medios de pago aceptan?</h3>
+        <p>Transferencia bancaria, tarjeta, efectivo al retirar y links de pago.</p>
+      </div>
+      <div class="faq-item">
+        <h3>¿Dónde puedo retirar?</h3>
+        <p>Local en Av. Italia 12345, Montevideo. Horario: lunes a viernes de 9 a 18 hs.</p>
+      </div>
+    </div>
+
+    <div class="demo-panel">
+      <h2>Consulta de pedido demo</h2>
+      <p>Probar con <code>ORD-1027</code>, <code>ORD-1041</code> u <code>ORD-1088</code>.</p>
+      <form id="order-lookup" class="form-grid">
+        <div class="field">
+          <label>Número de pedido</label>
+          <input id="order-id" placeholder="ORD-1027">
+        </div>
+        <div class="field" style="justify-content:end">
+          <button class="btn btn-primary" type="submit">Consultar</button>
+        </div>
+      </form>
+      <div id="order-result"></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>BrainEcommerce Demo Store</h3>
+      <p>Tienda creada para demostraciones comerciales. Los productos, precios, pedidos y direcciones son de ejemplo.</p>
+    </div>
+    <div>
+      <h3>Atención</h3>
+      <p>Lunes a viernes de 9 a 18 hs.<br>Sábados de 9 a 13 hs.</p>
+    </div>
+    <div>
+      <h3>Demo</h3>
+      <p>Probar pedidos: ORD-1027, ORD-1041 y ORD-1088.</p>
+    </div>
+  </div>
+</footer>
+<div class="toast"></div>
+
+<script src="data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
